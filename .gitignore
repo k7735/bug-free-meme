@@ -1,0 +1,40 @@
+# CakePHP 3
+
+/vendor/*
+/config/app.php
+
+/tmp/cache/models/*
+!/tmp/cache/models/empty
+/tmp/cache/persistent/*
+!/tmp/cache/persistent/empty
+/tmp/cache/views/*
+!/tmp/cache/views/empty
+/tmp/sessions/*
+!/tmp/sessions/empty
+/tmp/tests/*
+!/tmp/tests/empty
+
+/logs/*
+!/logs/empty
+
+# CakePHP 2
+
+/app/tmp/*
+/app/Config/core.php
+/app/Config/database.php
+/vendors/*
+'EmailTransport' => [
+   'default' => [
+      'className' => 'Mail',
+      
+      // The following keys are used in SMTP transports
+      'host' => 'localhost',
+      'port' => 25,
+      'timeout' => 30,
+      'username' => 'user',
+      'password' => 'secret',
+      'client' => null,
+      'tls' => null,
+      'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
+   ],
+],
